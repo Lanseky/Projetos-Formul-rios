@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <div class="container">
+        <div class="header">
+            <h3>Se cadastre no formulário abaixo</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Preencha todos os campos abaixo</h1>
+                <p class="form-p">Descreva as suas características:</p>
+
+                <!--   FORMULÁRIO   -->
+                
+                <form action="#">
+                    <div class="box-input">
+                        <label for="name">Nome <span class="required-field">*</span></label>
+                        <input type="text" name="name" id="name" class="block" placeholder="Coloque seu nome completo" minlength="1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="CPF">CPF <span class="required-field">*</span></label>
+                        <input type="text" name="CPF" id="CPF" class="block" placeholder="Digite seu CPF" minlength="1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="telefone">Número de Telefone <span class="required-field">*</span></label>
+                        <input type="text" name="telefone" id="telefone" class="block" placeholder="Digite o seu número de telefone" minlength="1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="endereço">Endereço <span class="required-field">*</span></label>
+                        <input type="text" name="endereço" id="endereço" class="block" placeholder="Rua, bairro, n° casa/apartamento" minlength="1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="email">E-mail <span class="required-field">*</span></label>
+                        <input type="text" name="email" id="email" class="block" placeholder="exemplo@outlook.com" minlength="1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Gênero <span class="required-field">*</span></p>
+                        <label for="masculino">Masculino </label>
+                        <input type="radio" name="masculino" id="masculino" class="block" placeholder="Coloque seu nome completo" minlength="1" required>
+                        <label for="feminino">Feminino </label>
+                        <input type="radio" name="feminino" id="feminino" class="block" placeholder="Coloque seu nome completo" minlength="1" required>
+                    </div>
+
+                    <textarea name="características" id="características" placeholder="Descreva suas qualidades,defeitos etc..."></textarea>
+
+                    <div class="btn">
+                        <input type="submit" value="Enviar" class="btn-login">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Lucas Adão 2025</p>
+    </footer>
+</body>
+</html>
